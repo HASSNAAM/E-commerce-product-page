@@ -84,94 +84,97 @@
       </div>
     </nav>
 
-    <header id="header">
-      <div class="card">
-        <div class="img-card">
-          <img
-            src="./images/icon-previous.svg"
-            alt="icon-previous"
-            class="previous" onclick="prevImage()"
-          />
-          <img src="./images/icon-next.svg" alt="icon-next" class="next" onclick="nextImage()" />
-          <img
-            src="./images/image-product-1.jpg"
-            alt="image-product-1"
-            class="main-img"
-            id="main-img"
-          />
-          <div class="container-images">
-            <div
-              class="thumbnail active-img"
-              onclick="changeImage('./images/image-product-1.jpg',this)"
-            >
-              <img
-                src="./images/image-product-1-thumbnail.jpg"
-                alt="image-product-1-thumbnail"
-              />
+    <main>
+      <header id="header">
+        <div class="card">
+          <div class="img-card">
+            <img
+              src="./images/icon-previous.svg"
+              alt="icon-previous"
+              class="previous" onclick="prevImage()"
+            />
+            <img src="./images/icon-next.svg" alt="icon-next" class="next" onclick="nextImage()" />
+            <img
+              src="./images/image-product-1.jpg"
+              alt="image-product-1"
+              class="main-img"
+              id="main-img"
+            />
+            <div class="container-images">
+              <div
+                class="thumbnail active-img"
+                onclick="changeImage('./images/image-product-1.jpg',this)"
+              >
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="image-product-1-thumbnail"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                onclick="changeImage('./images/image-product-2.jpg',this)"
+              >
+                <img
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt="image-product-2-thumbnail"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                onclick="changeImage('./images/image-product-3.jpg',this)"
+              >
+                <img
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt="image-product-3-thumbnail"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                onclick="changeImage('./images/image-product-4.jpg',this)"
+              >
+                <img
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt="image-product-4-thumbnail"
+                />
+              </div>
             </div>
-            <div
-              class="thumbnail"
-              onclick="changeImage('./images/image-product-2.jpg',this)"
-            >
-              <img
-                src="./images/image-product-2-thumbnail.jpg"
-                alt="image-product-2-thumbnail"
-              />
+          </div>
+  
+          <div class="text-card">
+            <p class="new">Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand everything
+              the weather can offer.
+            </p>
+            <div class="price-container">
+              <div class="price">
+                <p>$125.00</p>
+                <p class="discount">50%</p>
+              </div>
+              <p class="old-price">$250.00</p>
             </div>
-            <div
-              class="thumbnail"
-              onclick="changeImage('./images/image-product-3.jpg',this)"
-            >
-              <img
-                src="./images/image-product-3-thumbnail.jpg"
-                alt="image-product-3-thumbnail"
-              />
-            </div>
-            <div
-              class="thumbnail"
-              onclick="changeImage('./images/image-product-4.jpg',this)"
-            >
-              <img
-                src="./images/image-product-4-thumbnail.jpg"
-                alt="image-product-4-thumbnail"
-              />
+            <div class="counter">
+              <div class="count">
+                <div class="minus" onclick="changeQuantity(-1)">
+                  <img src="./images/icon-minus.svg" alt="icon-minus" />
+                </div>
+                <p class="quantity" id="quantity">0</p>
+                <div class="plus" onclick="changeQuantity(1)">
+                  <img src="./images/icon-plus.svg" alt="icon-plus" />
+                </div>
+              </div>
+              <button class="btn" id="add-cart">
+                <img src="./images/icon-cart.svg" alt="icon-cart" /> Add to cart
+              </button>
             </div>
           </div>
         </div>
-
-        <div class="text-card">
-          <p class="new">Sneaker Company</p>
-          <h1>Fall Limited Edition Sneakers</h1>
-          <p class="description">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
-          </p>
-          <div class="price-container">
-            <div class="price">
-              <p>$125.00</p>
-              <p class="discount">50%</p>
-            </div>
-            <p class="old-price">$250.00</p>
-          </div>
-          <div class="counter">
-            <div class="count">
-              <div class="minus" onclick="changeQuantity(-1)">
-                <img src="./images/icon-minus.svg" alt="icon-minus" />
-              </div>
-              <p class="quantity" id="quantity">0</p>
-              <div class="plus" onclick="changeQuantity(1)">
-                <img src="./images/icon-plus.svg" alt="icon-plus" />
-              </div>
-            </div>
-            <button class="btn" id="add-cart">
-              <img src="./images/icon-cart.svg" alt="icon-cart" /> Add to cart
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+      </header>
+    </main>
     <section id="section" class="active">
+      <h2>section></h2>
       <div class="layout">
         <div class="img-card">
           <img
